@@ -1,0 +1,193 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>mac系统常用操作 | 哈希狗</title>
+<link rel="shortcut icon" href="https://hashdog.cn/favicon.ico?v=1686644727962">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://hashdog.cn/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="mac系统常用操作 | 哈希狗 - Atom Feed" href="https://hashdog.cn/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="命令行
+1.删除目录下所有._开头文件
+find ./ -name &quot;._*&quot; -depth -exec rm {} \;
+2.删除目录下所有.DS_Store文件
+find ./ -name &quot;.DS_Sto..." />
+    <meta name="keywords" content="macOS" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://hashdog.cn">
+  <img class="avatar" src="https://hashdog.cn/images/avatar.png?v=1686644727962" alt="">
+  </a>
+  <h1 class="site-title">
+    哈希狗
+  </h1>
+  <p class="site-description">
+    保持好奇
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+        <a href="https://github.com/hashdogcn" target="_blank">
+          <i class="ri-github-line"></i>
+        </a>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              mac系统常用操作
+            </h2>
+            <div class="post-info">
+              <span>
+                2020-09-05
+              </span>
+              <span>
+                1 min read
+              </span>
+              
+                <a href="https://hashdog.cn/tag/3wvb8fFbD/" class="post-tag">
+                  # macOS
+                </a>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content" v-pre>
+                <h3 id="命令行">命令行</h3>
+<p>1.删除目录下所有._开头文件<br>
+<code>find ./ -name &quot;._*&quot; -depth -exec rm {} \;</code></p>
+<p>2.删除目录下所有.DS_Store文件<br>
+<code>find ./ -name &quot;.DS_Store&quot; -depth -exec rm {} \;</code></p>
+<h3 id="其他操作">其他操作</h3>
+<ul>
+<li>**修改访达默认排列方式 **<br>
+<strong>快捷键</strong> <code>command+J</code><br>
+随便打开一个访达窗口，按下快捷键command+J弹出修改默认设置窗口<br>
+<img src="https://hashdog.cn/post-images/1599278023055.png" alt="" loading="lazy"><br>
+修改分组方式和排列方式即可实现<br>
+😘 Enjoy~</li>
+</ul>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#%E5%91%BD%E4%BB%A4%E8%A1%8C">命令行</a></li>
+<li><a href="#%E5%85%B6%E4%BB%96%E6%93%8D%E4%BD%9C">其他操作</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+
+        
+
+        <div class="site-footer">
+  <p>©<script>document.write(new Date().getFullYear());</script> <a href="#">HashDog</a><a class="rss" href="https://beian.miit.gov.cn/" target="_blank">粤ICP备2022007514号-1</a></p>
+  <a class="rss" href="https://hashdog.cn/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>

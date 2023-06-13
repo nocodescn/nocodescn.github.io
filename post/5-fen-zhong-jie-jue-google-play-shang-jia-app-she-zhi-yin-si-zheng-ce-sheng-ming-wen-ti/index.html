@@ -1,0 +1,199 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>5分钟解决google play上架App设置隐私政策声明问题 | 哈希狗</title>
+<link rel="shortcut icon" href="https://hashdog.cn/favicon.ico?v=1686644727962">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://hashdog.cn/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="5分钟解决google play上架App设置隐私政策声明问题 | 哈希狗 - Atom Feed" href="https://hashdog.cn/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="
+在我们的app上架到google play后，为了赚点小钱，就集成google ads，然而这会引发一个新的问题，那就是设置隐私政策声明的问题，通常我们会收到一封来自google play的邮件，提示我们app违背了 Issue: Vio..." />
+    <meta name="keywords" content="独立开发" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://hashdog.cn">
+  <img class="avatar" src="https://hashdog.cn/images/avatar.png?v=1686644727962" alt="">
+  </a>
+  <h1 class="site-title">
+    哈希狗
+  </h1>
+  <p class="site-description">
+    保持好奇
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+        <a href="https://github.com/hashdogcn" target="_blank">
+          <i class="ri-github-line"></i>
+        </a>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              5分钟解决google play上架App设置隐私政策声明问题
+            </h2>
+            <div class="post-info">
+              <span>
+                2020-10-17
+              </span>
+              <span>
+                2 min read
+              </span>
+              
+                <a href="https://hashdog.cn/tag/3gbwi6TTU/" class="post-tag">
+                  # 独立开发
+                </a>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content" v-pre>
+                <blockquote>
+<p>在我们的app上架到google play后，为了赚点小钱，就集成google ads，然而这会引发一个新的问题，那就是设置隐私政策声明的问题，通常我们会收到一封来自google play的邮件，提示我们app违背了 Issue: Violation of Usage of Android Advertising ID policy and section 4.8 of the Developer Distribution Agreement，需要对用户声明，告知用户，会获取用户的隐私信息。得输入一个url，url的内容就是隐私声明。</p>
+</blockquote>
+<h3 id="解决办法">解决办法:</h3>
+<ul>
+<li>
+<p>1.生成隐私内容<br>
+使用这个站点 <a href="https://app-privacy-policy-generator.firebaseapp.com/">https://app-privacy-policy-generator.firebaseapp.com</a> 根据app的名称，类型，平台等等，选择对应的选项，右边按钮还包含对应的第三方隐私服务链接，如果你用到的话，比如google play service, firebase等等，那么就勾选上。最后点击GENERATE，就会生成一个适合你自己app的privacy-policy页面了。生成的内容我们先保留，接着说下一步。</p>
+</li>
+<li>
+<p>2.在互联网上托管privacy-policy页面<br>
+这里我们使用Google 协作平台 <a href="https://sites.google.com/site">https://sites.google.com/site</a>来创建我们的页面， 可以可视化操作，拖动文本控件，然后填充内容，非常简单。多试几下，就明白了。我们只需要填入title，接着将上面的内容复制到正文区域，就可以了，后续就是保存文本内容，为这个页面设置自定义的url。如<code>https://sites.google.com/view/star-x-privacy-policy</code>这样的形式。最后不要忘了发布这个页面，到此大功告成。。</p>
+</li>
+</ul>
+<p>最后的最后，记得将这个url输入到google play后台的隐私设置区域，点击保存，重新发布app等候google play团队的审核。</p>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95">解决办法:</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://hashdog.cn/post/ios-huo-qu-app-de-ipa-bao-yi-ji-zi-yuan-wen-jian/">
+              <h3 class="post-title">
+                IOS获取APP的ipa包以及资源文件
+              </h3>
+            </a>
+          </div>
+        
+
+        
+
+        <div class="site-footer">
+  <p>©<script>document.write(new Date().getFullYear());</script> <a href="#">HashDog</a><a class="rss" href="https://beian.miit.gov.cn/" target="_blank">粤ICP备2022007514号-1</a></p>
+  <a class="rss" href="https://hashdog.cn/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>

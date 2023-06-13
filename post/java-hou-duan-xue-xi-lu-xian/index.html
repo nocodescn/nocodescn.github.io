@@ -1,0 +1,206 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Java后端学习路线 | 哈希狗</title>
+<link rel="shortcut icon" href="https://hashdog.cn/favicon.ico?v=1686644727962">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://hashdog.cn/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="Java后端学习路线 | 哈希狗 - Atom Feed" href="https://hashdog.cn/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="考虑到部分Android同学有学习Java后端的需求，所以给大家准备了一个学习路线。
+Java后端和Android开发都使用Java语言，所以默认大家已经掌握了如下技能（如果没有，请自行补充）：
+1、Java语言（含基本语法、jvm、多线程..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://hashdog.cn">
+  <img class="avatar" src="https://hashdog.cn/images/avatar.png?v=1686644727962" alt="">
+  </a>
+  <h1 class="site-title">
+    哈希狗
+  </h1>
+  <p class="site-description">
+    保持好奇
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+        <a href="https://github.com/hashdogcn" target="_blank">
+          <i class="ri-github-line"></i>
+        </a>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              Java后端学习路线
+            </h2>
+            <div class="post-info">
+              <span>
+                2022-07-12
+              </span>
+              <span>
+                3 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content" v-pre>
+                <p>考虑到部分Android同学有学习Java后端的需求，所以给大家准备了一个学习路线。</p>
+<p>Java后端和Android开发都使用Java语言，所以默认大家已经掌握了如下技能（如果没有，请自行补充）：<br>
+1、Java语言（含基本语法、jvm、多线程、io/nio）<br>
+2、IntelliJ IDEA（Java后端推荐的IDE，AndroidStudio基于IDEA开发）</p>
+<p>一、入门工具<br>
+主要内容有：Servelet、JSP、Tomcat、MySQL、JDBC<br>
+Servet： <a href="https://www.runoob.com/servlet/servlet-intro.html">Servlet 简介 | 菜鸟教程</a><br>
+JSP：<a href="https://www.runoob.com/jsp/jsp-intro.html">JSP 简介 | 菜鸟教程</a><br>
+JDBC：<a href="https://www.yiibai.com/jdbc/jdbc_quick_guide.html">JDBC快速入门教程 - JDBC教程™</a><br>
+MySQL：<a href="https://www.runoob.com/mysql/mysql-tutorial.html">MySQL 教程 | 菜鸟教程</a><br>
+Tomcat：<a href="https://www.jianshu.com/p/157334985eab">[转]Tomcat系列之服务器的安装与配置以及各组件详解 - 简书</a></p>
+<p>二、核心脚手架SSM<br>
+可以说Java后端就是运行在SSM上面的，所以搞懂SSM，就算入门了。<br>
+主要内容有：Spring（IOC/AOP）、Spring MVC、MyBatis</p>
+<p>这块内容比较多，建议通过书来系统学习，然后网络博客作为辅助。</p>
+<p>推荐图书：<br>
+Java EE互联网轻量级框架整合开发 SSM框架：<a href="https://item.jd.com/12122571.html">《Java EE互联网轻量级框架整合开发 SSM框架（Spring MVC Spring MyBat...</a><br>
+Spring实战：<a href="https://item.jd.com/12622829.html">《Spring实战 第5版》([美],克雷格·沃斯（Craig,Walls）)【摘要 书评 试读】-...</a></p>
+<p>三、核心中间件<br>
+主要内容有：<br>
+1、内存型key-value数据库：Redis<br>
+2、消息队列：kfaka<br>
+3、RPC框架：Dubbo<br>
+4、分布式服务框架：ZooKeeper</p>
+<p>Java后端的大部分工作，都是熟练使用各种中间件，而且同一个功能会有多个中间件，比如消息队列，除了kfaka，还有rocketmq、qmq等，建议大家先学习一个最主流的，等入门以后再学习其它。</p>
+<p>Redis：<a href="https://www.runoob.com/redis/redis-tutorial.html">Redis 教程 | 菜鸟教程</a></p>
+<p>kfaka：<br>
+<a href="https://www.cnblogs.com/qingyunzong/category/1212387.html">Kafka - 随笔分类 - 扎心了，老铁 - 博客园</a><br>
+<a href="http://kafka.apachecn.org/">http://kafka.apachecn.org/</a></p>
+<p>Dubbo：<br>
+<a href="https://segmentfault.com/a/1190000019896723">Dubbo 一篇文章就够了：从入门到实战 - 个人文章 - SegmentFault 思否</a><br>
+<a href="http://dubbo.apache.org/zh-cn/">home</a></p>
+<p>ZooKeeper：<br>
+<a href="https://blog.csdn.net/java_66666/article/details/81015302">Zookeeper入门看这篇就够了_技术分享-CSDN博客_zookeeper</a><br>
+<a href="https://www.jikexueyuan.com/course/zookeeper/">Zookeeper视频教程_Zookeeper在线学习-极客学院</a></p>
+<p>上面这些内容，学完后，自己尝试写一个demo，就算入门了。入门后面的事情，就需要在公司实际项目中实践了。</p>
+
+              </div>
+              <div class="toc-container">
+                
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://hashdog.cn/post/reactnative-xue-xi-lu-xian/">
+              <h3 class="post-title">
+                ReactNative学习路线
+              </h3>
+            </a>
+          </div>
+        
+
+        
+
+        <div class="site-footer">
+  <p>©<script>document.write(new Date().getFullYear());</script> <a href="#">HashDog</a><a class="rss" href="https://beian.miit.gov.cn/" target="_blank">粤ICP备2022007514号-1</a></p>
+  <a class="rss" href="https://hashdog.cn/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>

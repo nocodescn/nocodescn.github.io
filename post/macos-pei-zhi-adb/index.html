@@ -1,0 +1,236 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>macOS配置adb | 哈希狗</title>
+<link rel="shortcut icon" href="https://hashdog.cn/favicon.ico?v=1686644727962">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://hashdog.cn/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="macOS配置adb | 哈希狗 - Atom Feed" href="https://hashdog.cn/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="
+
+1.首先打开终端命令行，我们检查一下是否有配置好adb命令，直接终端输入adb提示command not found: adb就是没有配置
+
+
+
+2.下面我们在用户目录下输入
+
+
+vi ~/.bash_profile
+
+
+
+3.然后用v..." />
+    <meta name="keywords" content="macOS" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://hashdog.cn">
+  <img class="avatar" src="https://hashdog.cn/images/avatar.png?v=1686644727962" alt="">
+  </a>
+  <h1 class="site-title">
+    哈希狗
+  </h1>
+  <p class="site-description">
+    保持好奇
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+        <a href="https://github.com/hashdogcn" target="_blank">
+          <i class="ri-github-line"></i>
+        </a>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              macOS配置adb
+            </h2>
+            <div class="post-info">
+              <span>
+                2020-09-05
+              </span>
+              <span>
+                1 min read
+              </span>
+              
+                <a href="https://hashdog.cn/tag/3wvb8fFbD/" class="post-tag">
+                  # macOS
+                </a>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content" v-pre>
+                <ul>
+<li>
+<p>1.首先打开终端命令行，我们检查一下是否有配置好adb命令，直接终端输入adb提示command not found: adb就是没有配置<br>
+<img src="https://hashdog.cn/post-images/1599279193938.png" alt="" loading="lazy"></p>
+</li>
+<li>
+<p>2.下面我们在用户目录下输入</p>
+</li>
+</ul>
+<pre><code class="language-shell">vi ~/.bash_profile
+</code></pre>
+<figure data-type="image" tabindex="1"><img src="https://hashdog.cn/post-images/1599279226098.png" alt="" loading="lazy"></figure>
+<ul>
+<li>3.然后用vi工具直接键入导入adb命令的目录</li>
+</ul>
+<pre><code class="language-shell">export PATH=${PATH}:/Users/目录/Library/Android/sdk/platform-tools
+</code></pre>
+<p>此处『目录』为你电脑的用户名，如下图第一行所示，保存退出vi工具<br>
+<img src="https://hashdog.cn/post-images/1599279251178.png" alt="" loading="lazy"><br>
+如果你电脑的adb安装在其他目录，根据你安装的目录进行修改即可</p>
+<ul>
+<li>4.用source命令执行一下刚刚新建的文件</li>
+</ul>
+<pre><code class="language-shell">source ~/.bash_profile 
+</code></pre>
+<ul>
+<li>5.好了，到这里就大功告成了，执行一下adb看看是否配置成功<br>
+<img src="https://hashdog.cn/post-images/1599279291496.png" alt="" loading="lazy"></li>
+</ul>
+<h3 id="特殊情况">特殊情况</h3>
+<p>如果你的电脑重启后adb命令不生效了，可以修改.zshrc文件，重启自动source ~/.bash_profile</p>
+<p>vi打开.zshrc文件，此时如果电脑没有这个文件会自动创建</p>
+<pre><code class="language-shell">vi ~/.zshrc
+</code></pre>
+<p><img src="https://hashdog.cn/post-images/1599279301313.png" alt="" loading="lazy"><br>
+最后一行输入</p>
+<pre><code class="language-shell">source ~/.bash_profile 
+</code></pre>
+<p><img src="https://hashdog.cn/post-images/1599279321712.png" alt="" loading="lazy"><br>
+保存后退出即可。</p>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#%E7%89%B9%E6%AE%8A%E6%83%85%E5%86%B5">特殊情况</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://hashdog.cn/post/mac-xi-tong-chang-yong-cao-zuo/">
+              <h3 class="post-title">
+                mac系统常用操作
+              </h3>
+            </a>
+          </div>
+        
+
+        
+
+        <div class="site-footer">
+  <p>©<script>document.write(new Date().getFullYear());</script> <a href="#">HashDog</a><a class="rss" href="https://beian.miit.gov.cn/" target="_blank">粤ICP备2022007514号-1</a></p>
+  <a class="rss" href="https://hashdog.cn/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>

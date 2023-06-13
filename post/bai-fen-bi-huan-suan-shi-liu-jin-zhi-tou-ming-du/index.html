@@ -1,0 +1,204 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>百分比换算十六进制透明度 | 哈希狗</title>
+<link rel="shortcut icon" href="https://hashdog.cn/favicon.ico?v=1686644727962">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://hashdog.cn/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="百分比换算十六进制透明度 | 哈希狗 - Atom Feed" href="https://hashdog.cn/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="&lt;透明度参照表&gt;
+00%=FF（不透明）
+5%=F2
+10%=E5
+15%=D8
+20%=CC
+25%=BF
+30%=B2
+35%=A5
+40%=99
+45%=8c
+50%=7F
+55%=72
+60%=66
+65%=59
+70%..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://hashdog.cn">
+  <img class="avatar" src="https://hashdog.cn/images/avatar.png?v=1686644727962" alt="">
+  </a>
+  <h1 class="site-title">
+    哈希狗
+  </h1>
+  <p class="site-description">
+    保持好奇
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+        <a href="https://github.com/hashdogcn" target="_blank">
+          <i class="ri-github-line"></i>
+        </a>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              百分比换算十六进制透明度
+            </h2>
+            <div class="post-info">
+              <span>
+                2021-03-25
+              </span>
+              <span>
+                1 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content" v-pre>
+                <p>&lt;透明度参照表&gt;<br>
+00%=FF（不透明）<br>
+5%=F2<br>
+10%=E5<br>
+15%=D8<br>
+20%=CC<br>
+25%=BF<br>
+30%=B2<br>
+35%=A5<br>
+40%=99<br>
+45%=8c<br>
+50%=7F<br>
+55%=72<br>
+60%=66<br>
+65%=59<br>
+70%=4c<br>
+75%=3F<br>
+80%=33<br>
+85%=21<br>
+95%=0c<br>
+100%=00（全透明）</p>
+
+              </div>
+              <div class="toc-container">
+                
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://hashdog.cn/post/mian-fei-ruan-zhu-shen-qing-deng-ji-xiang-xi-jiao-cheng/">
+              <h3 class="post-title">
+                免费软著申请登记详细教程
+              </h3>
+            </a>
+          </div>
+        
+
+        
+
+        <div class="site-footer">
+  <p>©<script>document.write(new Date().getFullYear());</script> <a href="#">HashDog</a><a class="rss" href="https://beian.miit.gov.cn/" target="_blank">粤ICP备2022007514号-1</a></p>
+  <a class="rss" href="https://hashdog.cn/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>

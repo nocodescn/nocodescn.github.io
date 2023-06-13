@@ -1,0 +1,209 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>GooglePlay上架应用的Facebook keyhash获取方法 | 哈希狗</title>
+<link rel="shortcut icon" href="https://hashdog.cn/favicon.ico?v=1686644727962">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://hashdog.cn/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="GooglePlay上架应用的Facebook keyhash获取方法 | 哈希狗 - Atom Feed" href="https://hashdog.cn/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="下载GooglePlay签名证书
+在上架GooglePlay的时候谷歌会推荐加入谷歌签名计划，上架的应用会在谷歌后台重新签名打包，导致我们的本地密钥被覆盖的情况。很多小伙伴在做谷歌登录Facebook登录的时候密钥的哈希值在测试没问题上架就..." />
+    <meta name="keywords" content="独立开发" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://hashdog.cn">
+  <img class="avatar" src="https://hashdog.cn/images/avatar.png?v=1686644727962" alt="">
+  </a>
+  <h1 class="site-title">
+    哈希狗
+  </h1>
+  <p class="site-description">
+    保持好奇
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+        <a href="https://github.com/hashdogcn" target="_blank">
+          <i class="ri-github-line"></i>
+        </a>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              GooglePlay上架应用的Facebook keyhash获取方法
+            </h2>
+            <div class="post-info">
+              <span>
+                2020-09-07
+              </span>
+              <span>
+                2 min read
+              </span>
+              
+                <a href="https://hashdog.cn/tag/3gbwi6TTU/" class="post-tag">
+                  # 独立开发
+                </a>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content" v-pre>
+                <h2 id="下载googleplay签名证书">下载GooglePlay签名证书</h2>
+<p>在上架GooglePlay的时候谷歌会推荐加入谷歌签名计划，上架的应用会在谷歌后台重新签名打包，导致我们的本地密钥被覆盖的情况。很多小伙伴在做谷歌登录Facebook登录的时候密钥的哈希值在测试没问题上架就不行就是这个问题。</p>
+<p>首先在GooglePlay控制台下载谷歌签名的证书文件。<br>
+<img src="https://hashdog.cn/post-images/1599444202224.png" alt="" loading="lazy"><br>
+下载的文件是这个样子的。<br>
+<img src="https://hashdog.cn/post-images/1599444182972.png" alt="" loading="lazy"><br>
+这时有点疑虑了，怎么跟本地的签名文件不一样呢。是的，在谷歌控制台下载的证书文件不是我们本地签名的.keystore或.jks签名文件。<br>
+那么问题来了，这种.der证书文件能不能获取到哈希值呢，答案是可以的。</p>
+<h2 id="facebook-keyhash获取方法">Facebook keyhash获取方法</h2>
+<p>一般本地的签名文件我们使用这样的命令就可以获取哈希值（需要安装openssl）</p>
+<pre><code class="language-shell">keytool -exportcert -alias androiddebugkey -keystore debug.keystore | openssl sha1 -binary | openssl base64
+</code></pre>
+<blockquote>
+<p>androiddebugkey：签名文件的Alias<br>
+debug.keystore：签名文件路径</p>
+</blockquote>
+<p>GooglePlay下载的证书文件使用下面的命令获取哈希值（同样需要openssl）</p>
+<pre><code class="language-shell">openssl sha1 -binary deployment_cert.der | openssl base64
+</code></pre>
+<blockquote>
+<p>deployment_cert.der：下载的签名文件路径</p>
+</blockquote>
+<h2 id="福利">福利</h2>
+<p>顺带提供一个我自己开发的获取Facebook哈希值的小工具BuildfbKey，非常方便使用<br>
+<img src="https://hashdog.cn/post-images/1599444223740.png" alt="" loading="lazy"><br>
+只需要把签名文件拖进path框然后输入alias和password点击生成即可，免去了在终端输入一长串命令的繁琐步骤。</p>
+<p>工具下载链接：<a href="https://hashdog.cn/post-images/BuildfbKey.zip">BuildfbKey.jar</a></p>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#%E4%B8%8B%E8%BD%BDgoogleplay%E7%AD%BE%E5%90%8D%E8%AF%81%E4%B9%A6">下载GooglePlay签名证书</a></li>
+<li><a href="#facebook-keyhash%E8%8E%B7%E5%8F%96%E6%96%B9%E6%B3%95">Facebook keyhash获取方法</a></li>
+<li><a href="#%E7%A6%8F%E5%88%A9">福利</a></li>
+</ul>
+</li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://hashdog.cn/post/macos-pei-zhi-adb/">
+              <h3 class="post-title">
+                macOS配置adb
+              </h3>
+            </a>
+          </div>
+        
+
+        
+
+        <div class="site-footer">
+  <p>©<script>document.write(new Date().getFullYear());</script> <a href="#">HashDog</a><a class="rss" href="https://beian.miit.gov.cn/" target="_blank">粤ICP备2022007514号-1</a></p>
+  <a class="rss" href="https://hashdog.cn/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>

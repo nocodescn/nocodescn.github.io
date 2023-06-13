@@ -1,0 +1,655 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://hashdog.cn</id>
+    <title>哈希狗</title>
+    <updated>2023-06-13T08:25:31.141Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://hashdog.cn"/>
+    <link rel="self" href="https://hashdog.cn/atom.xml"/>
+    <subtitle>保持好奇</subtitle>
+    <logo>https://hashdog.cn/images/avatar.png</logo>
+    <icon>https://hashdog.cn/favicon.ico</icon>
+    <rights>All rights reserved 2023, 哈希狗</rights>
+    <entry>
+        <title type="html"><![CDATA[分享Flutter Widget]]></title>
+        <id>https://hashdog.cn/post/fen-xiang-flutter-widget/</id>
+        <link href="https://hashdog.cn/post/fen-xiang-flutter-widget/">
+        </link>
+        <updated>2022-12-01T02:33:38.000Z</updated>
+        <content type="html"><![CDATA[<p>1、加载动画：<a href="https://pub.flutter-io.cn/packages/loading_animation_widget">loading_animation_widget</a><br>
+2、应用内购和订阅：<a href="https://pub.flutter-io.cn/packages/in_app_purchase">in_app_purchase</a><br>
+3、下拉刷新上拉加载：<br>
+4、Dialog：<br>
+5、权限：<br>
+6、</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[pub finished with exit code 78解决办法]]></title>
+        <id>https://hashdog.cn/post/pub-finished-with-exit-code-78-jie-jue-ban-fa/</id>
+        <link href="https://hashdog.cn/post/pub-finished-with-exit-code-78-jie-jue-ban-fa/">
+        </link>
+        <updated>2022-10-08T06:47:09.000Z</updated>
+        <content type="html"><![CDATA[<p>一、常规办法<br>
+执行flutter packages pub run build_runner build后报code 78错误<br>
+1、flutter packages pub run build_runner clean<br>
+2、flutter packages pub run build_runner build --delete-conflicting-outputs<br>
+以上方法会解决大部分错误</p>
+<p>二、备用方法<br>
+需要删除本地安装的插件<br>
+1、flutter clean<br>
+2、flutter doctor<br>
+3、flutter packages pub run build_runner clean<br>
+4、flutter packages pub run build_runner build --delete-conflicting-outputs</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Android专家学习路线]]></title>
+        <id>https://hashdog.cn/post/android-zhuan-jia-xue-xi-lu-xian/</id>
+        <link href="https://hashdog.cn/post/android-zhuan-jia-xue-xi-lu-xian/">
+        </link>
+        <updated>2022-07-12T06:48:02.000Z</updated>
+        <content type="html"><![CDATA[<p>欢迎来到这里，你们都是有追求的人。</p>
+<p>专家对应的级别为：<br>
+百度 T6<br>
+阿里 P7<br>
+腾讯 T3.1<br>
+滴滴 D8-</p>
+<p>引言<br>
+在入门和高级路线里面，我们把该学的技术点基本都学完了。大家仔细想一下，高级和专家到底差多少？其实要论技术，未必差多少，但是却总是差那么一点感觉，这点感觉很重要。</p>
+<p>在专家学习路线中，技术将不再那么重要，学习路线也不再那么具体，毕竟都要专家的人，还要靠我手把手教？这不是笑话嘛，而且手把手一定是教不出专家的，我指引一下，然后剩下靠自己感悟吧。</p>
+<p>在我眼里，专家除了具有扎实的技术深度以外，还有一定的技术广度，以及不错的架构设计能力。但这只占50%，剩下50%是软技能，比如如何带人，如何写PPT，如何在公司里混？也许你想笑，但事实上，越是高级别越得会混，不然你是很难再向上发展的。</p>
+<p>这部分内容比较虚，但是会对你职业生涯的后半段有很大帮助。</p>
+<p>第一关：主线程消息循环（建议学习时间：1周）<br>
+知识点：Binder原理、AIDL的使用、多进程的定义和特性<br>
+学习资料：<br>
+① Android开发艺术探索第10章 第三节【推荐理由】不解释。<br>
+② <a href="https://www.zhihu.com/question/34652589/answer/90344494">Android中为什么主线程不会因为Looper.loop()里的死循环卡死？ - 知乎</a> 【推荐理由】清晰正确，一切皆消息。<br>
+③ <a href="https://blog.csdn.net/singwhatiwanna/article/details/50775201">Android中MotionEvent的来源和ViewRootImpl - 任玉刚 - CSDN博客</a> 【推荐理由】以点击事件为例，进一步阐述皆消息。</p>
+<p>第二关：AMS（建议学习时间：4周）<br>
+① Android开发艺术探索 第9章【推荐理由】不解释。<br>
+② Android内核剖析 第10章【推荐理由】我就是看这个学习的，我心中最好的资料。<br>
+③Android进阶解密 第6章 【推荐理由】基于Android 8.0，结合上面的书再理解下。<br>
+PS：Android内核剖析已绝版，自己网上找PDF即可</p>
+<p>第三关：WMS（建议学习时间：4周）<br>
+① Android开发艺术探索 第8章【推荐理由】不解释。<br>
+② Android内核剖析 第14章【推荐理由】我就是看这个学习的，我心中最好的资料。<br>
+③ Android进阶解密 第8章 【推荐理由】基于Android 8.0，结合上面的书再理解下。</p>
+<p>第四关：PMS（建议学习时间：2周）<br>
+① Android内核剖析 第16章【推荐理由】我就是看这个学习的，我心中最好的资料。<br>
+② <a href="https://blog.csdn.net/innost/article/details/47253179">[深入理解Android卷二 全文-第四章]深入理解PackageManagerService - ...</a>【推荐理由】《深入理解Android》里面的内容<br>
+③ 阅读PackageManagerService相关源码</p>
+<p>第五关：SystemServer（建议学习时间：1周）<br>
+① <a href="https://blog.csdn.net/singwhatiwanna/article/details/18448997#t4">Android源码分析-Alarm机制与Binder的交互 - 任玉刚 - CSDN博客</a>【推荐理由】任玉刚写的<br>
+② Android进阶解密 第2章 【推荐理由】基于Android 8.0，结合上面的文章再理解下。<br>
+③ 阅读SystemServer相关源码，了解系统服务的注册和运行</p>
+<p>第六关：复杂Gradle插件（建议学习时间：4周）<br>
+① <a href="https://mp.weixin.qq.com/s/DzuLtqx_CBFm9tJos9j2Ag">Android Gradle Plugin 源码解析（下）</a>【推荐理由】Android gradle plugin源码解析。<br>
+② <a href="https://github.com/didi/VirtualAPK/tree/master/virtualapk-gradle-plugin">VirtualAPK/virtualapk-gradle-plugin at master · di...</a>【推荐理由】VirtualAPK gradle插件源码<br>
+③ <a href="https://github.com/jasonross/NuwaGradle">GitHub - jasonross/NuwaGradle: gradle plugin wrote...</a> 【推荐理由】nuwa gradle插件源码<br>
+说明：还需要查看Android源码的gradle分支，里面涉及到Android的构建细节，这样才能写出VirtualAPK类似的复杂插件。</p>
+<p>第七关：下载、阅读、编译Android源码、刷机（建议学习时间：2周）<br>
+① <a href="https://source.android.com/source/downloading.html">https://source.android.com/source/downloading.html</a>【推荐理由】源码下载<br>
+② <a href="https://edu.csdn.net/course/play/1923/29810">【Android源码查看工具】任玉刚在线视频教程 - CSDN学院-CSDN学院</a>【推荐理由】源码阅读<br>
+③ <a href="https://source.android.com/setup/build/building">https://source.android.com/setup/build/building</a> 【推荐理由】源码编译<br>
+④ <a href="https://source.android.com/setup/build/running.html">https://source.android.com/setup/build/running.html</a> 【推荐理由】刷机<br>
+说明：刷机最好用Google的nexus系列手机，将厂商设备驱动下载下来放到源码目录再进行编译，否则刷机后手机无法启动。</p>
+<p>专家路线的技术部分就到这里，推荐大家看完这三本书：《Android开发艺术探索》、《Android内核剖析》、《Android进阶解密》。</p>
+<p>其他内容：都比较虚，有的是软技能，网上没有现成的资料，需要大家自己去学习去琢磨，专家不是手把手教出来的。我后面也会分享我的个人见解，这里给大家推荐几个相关的极客时间专栏（绝非广告），大家找时间读读：<br>
+① 程序员进阶攻略<br>
+② 从0开始学架构<br>
+③ 技术管理实战36讲</p>
+<figure data-type="image" tabindex="1"><img src="https://hashdog.cn/post-images/1657608517583.jpeg" alt="" loading="lazy"></figure>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Android高级学习路线]]></title>
+        <id>https://hashdog.cn/post/android-gao-ji-xue-xi-lu-xian/</id>
+        <link href="https://hashdog.cn/post/android-gao-ji-xue-xi-lu-xian/">
+        </link>
+        <updated>2022-07-12T06:46:59.000Z</updated>
+        <content type="html"><![CDATA[<p>引言<br>
+本学习路线的内容都是面试高频，难度大，但是学会以后终身受用。这里的高级采用的是BAT标准，即严格意义的高级工程师，在小公司都可以当个leader了。</p>
+<p>本学习路线共有22关，如下图所示，高级路线更偏重对原理和知识完备度的把握，除此之外，还涉及到一部分架构、jni以及Gradle等知识。</p>
+<p>学习这部分知识不要心急，慢慢来。</p>
+<p>第一关：Binder、AIDL、多进程（建议学习时间：2周）<br>
+知识点：Binder原理、AIDL的使用、多进程的定义和特性<br>
+学习资料：<br>
+① Android开发艺术探索第2章【推荐理由】地球人都知道学Android要看艺术探索。<br>
+② Android Bander设计与实现 - 设计篇 - universus的专栏 - CSDN博客 【推荐理由】Binder底层史上最牛逼分析，没有之一。<br>
+③ 艺术探索第2章的例子，请一定手动运行一遍并仔细理解，地址：GitHub - singwhatiwanna/android-art-res: the sourc...。</p>
+<p>第二关：View的绘制（建议学习时间：3天）<br>
+知识点：View的measure、layout和draw，View的工作原理<br>
+学习资料：<br>
+① Android开发艺术探索第4章【推荐理由】地球人都知道学Android要看艺术探索。<br>
+② 图解View测量、布局及绘制原理 - 简书 【推荐理由】配有流程图，比艺术探索好理解一些。<br>
+③ android ListView 工作原理 - Android - 掘金【推荐理由】帮大家了解ListView的工作过程，很有价值。</p>
+<p>第三关：事件分发（建议学习时间：1周）<br>
+知识点：事件分发原理和规则<br>
+学习资料：<br>
+① Android开发艺术探索第3章【推荐理由】地球人都知道学Android要看艺术探索。<br>
+② Android事件分发机制，大表哥带你慢慢深入 - 简书 【推荐理由】通过实际的例子来讲事件分发，好理解。<br>
+③ Android ViewGroup事件分发机制 - Hongyang - CSDN博客 【推荐理由】张鸿洋写的。</p>
+<p>第四关：消息队列（建议学习时间：1天）<br>
+要求：Handler、Looper、Thread三者之间的关系；得知道子线程创建Handler为什么会报错，如何才能不报错<br>
+学习资料：<br>
+① Android开发艺术探索第10章【推荐理由】这块内容不难，艺术探索就够了。<br>
+② 源码角度讲解子线程创建Handler报错的原因 - 曹银飞的专栏 - CSDN博客【推荐理由】一个实际的例子帮助大家更好地理解。</p>
+<p>第五关：Activity难点（建议学习时间：1天）<br>
+① setResult和finish的顺序关系<br>
+② onSaveInstanceState()和onRestoreInstanceState()<br>
+③ onNewIntent()和onConfigurationChanged()<br>
+学习资料：<br>
+① setResult()的调用时机 - 沙翁 - 博客园【推荐理由】清晰易懂，直接了当。<br>
+② onSaveInstanceState()和onRestoreInstanceState()使用详解...【推荐理由】简单好懂。<br>
+③ 关于onConfigurationChanged方法及常见问题解决 - 朱小姐。的博客 - CSDN...【推荐理由】简单好懂，文章在郭霖公号投稿了。<br>
+④ 艺术探索第1章【推荐理由】地球人都知道学Android要看艺术探索。</p>
+<p>第六关：Service难点（建议学习时间：2天）<br>
+① 先start再bind，如何停止一个Service<br>
+② Service onStartCommand的返回值<br>
+③ bindService后，ServiceConnection里面的回调方法运行在哪个线程？它们的调用时机分别是什么？<br>
+④ Service的onCreate运行在哪个线程？<br>
+学习资料：<br>
+① Android中startService和bindService的区别 - 简书【推荐理由】详细全面地回答了上面的问题。<br>
+② Service: onStartCommand 诡异的返回值 - CodingMan - CSDN博...【推荐理由】通过实例来演示onStartCommand那诡异的返回值。<br>
+③ Service的onCreate、onStartCommand、onDestory等全部生命周期方法都运行在UI线程，ServiceConnection里面的回调方法也是运行在UI线程，大家一定要记住。【推荐理由】任玉刚说的，你们自己可以打log验证一下</p>
+<p>第七关：ContentProvider难点(建议学习时间：3天)<br>
+① ContentProvider的生命周期<br>
+② ContentProvider的onCreate和CRUD运行在哪个线程？它们是线程安全的吗？<br>
+③ ContentProvider的内部存储只能是sqlite吗？<br>
+学习资料：<br>
+① 艺术探索第9章中ContentProvider的启动、艺术探索第二章中ContentProvider的介绍【推荐理由】详细了解下，艺术探索的内容无需解释<br>
+② android ContentProvider onCreate()在 Application......【推荐理由】此文明确说明了ContentProvider的onCreate早于Application的onCreate而执行。<br>
+③ ContentProvider总结 - 简书【推荐理由】此文明确说明了ContentProvider的onCreate和CRUD所在的线程<br>
+注意：ContentProvider的底层是Binder，当跨进程访问ContentProvider的时候，CRUD运行在Binder线程池中，不是线程安全的，而如果在同一个进程访问ContentProvider，根据Binder的原理，同进程的Binder调用就是直接的对象调用，这个时候CRUD运行在调用者的线程中。另外，ContentProvider的内部存储不一定是sqlite，它可以是任意数据。</p>
+<p>第八关：AsyncTask原理(建议学习时间：3天)<br>
+要求：知道AsyncTask的工作原理，知道其串行和并行随版本的变迁<br>
+① Android源码分析—带你认识不一样的AsyncTask - 任玉刚 - CSDN博客 【推荐理由】只看这一篇文章就够了<br>
+② https://android.googlesource.com/platform/frameworks/base/ /android-8.1.0_r46/core/java/android/os/AsyncTask.java 【推荐理由】阅读AsyncTask 8.1版本的源码，看看是否有更新</p>
+<p>第九关：RemoteViews(建议学习时间：7天)<br>
+要求：熟悉RemoteViews并了解其原理<br>
+① Android开发艺术探索 第5章【推荐理由】艺术探索是高级工程师进阶必备<br>
+② 关于 RemoteViews 跨进程资源访问的勘误 - 掘金 【推荐理由】进一步理解RemoteViews的实现，通过它可以实现资源的跨进程访问，艺术探索中的担心是多余的</p>
+<p>第十关：Window和ViewRootImpl(建议学习时间：14天)<br>
+要求：熟悉Window、WMS和ViewRootImpl的原理<br>
+① Android开发艺术探索 第8章【推荐理由】艺术探索是高级工程师进阶必备<br>
+② Android进阶解密 第8章 【推荐理由】进阶必备<br>
+③ Android窗口机制（四）ViewRootImpl与View和WindowManager - 简书【推荐理由】另一个优秀作者对Window的描述<br>
+④ Android中MotionEvent的来源和ViewRootImpl - 任玉刚 - CSDN博客 【推荐理由】另一个角度理解下输入事件和ViewRootImpl的关联</p>
+<p>第十一关：刁钻问题汇总 (建议学习时间：一周)<br>
+① 子线程访问 UI 却不报错的原因：Android中子线程真的不能更新UI吗？ - yinhuanxu - CSDN博客<br>
+② 主线程的消息循环是一个死循环，为何不会卡死：Android中为什么主线程不会因为Looper.loop()里的死循环卡死？ - 知乎<br>
+③ Binder、IBinder、IInterface的关系：把玩Android多进程.pdf_免费高速下载|百度网盘-分享无限制<br>
+注意：主线程的消息循环背后，一切皆是消息，消息机制和Binder是Android系统的两大核心机制，屏幕触摸消息、键盘消息、四大组件的启动等均是由消息驱动。</p>
+<p>第十二关：Retrofit原理分析 (建议学习时间：14天)<br>
+要求：熟悉Retrofit/OKHttp的工作原理<br>
+① OKHttp源码解析 - 简书【推荐理由】okhttp源码分析<br>
+② Retrofit原理解析最简洁的思路 - 知乎 【推荐理由】retrofit原理分析<br>
+③ Retrofit是如何工作的？ - 简书【推荐理由】另一个retrofit原理分析<br>
+④ 自行阅读okhttp/retrofit的源码，并写出一篇原理分析的文章 【推荐理由】源码一定要亲自读一读，并沉淀为自己的知识</p>
+<p>第十三关：RxJava原理分析 (建议学习时间：14天)<br>
+① 友好 RxJava2.x 源码解析（一）基本订阅流程 - 掘金【推荐理由】基本订阅流程，已在玉刚说投稿<br>
+② 友好 RxJava2.x 源码解析（二）线程切换 - 掘金 【推荐理由】线程切换，已在玉刚说投稿<br>
+③ 友好 RxJava2.x 源码解析（三）zip 源码分析 - 掘金【推荐理由】zip，已在玉刚说投稿<br>
+④ 自行阅读RxJava源码，并写出一篇原理分析的文章 【推荐理由】源码一定要亲自读一读，并沉淀为自己的知识</p>
+<p>第十四关：Glide原理分析 (建议学习时间：14天)<br>
+① Android图片加载框架最全解析（二），从源码的角度理解Glide的执行流程 - 郭霖的专栏 - ...【推荐理由】glide工作原理，文章很长，郭霖出品<br>
+② 自行阅读 glide 4 源码，并写出一篇原理分析的文章 【推荐理由】源码一定要亲自读一读，并沉淀为自己的知识</p>
+<p>第十五关：Groovy (建议学习时间：3天)<br>
+要求：熟悉groovy的常见语法<br>
+① Gradle从入门到实战 - Groovy基础 - 任玉刚 - CSDN博客【推荐理由】groovy语法基础，任玉刚出品<br>
+② The Apache Groovy programming language - Documenta... 【推荐理由】官方文档，可当做字典来查阅</p>
+<p>第十六关：Gradle插件基础 (建议学习时间：7天)<br>
+要求：熟悉gradle语法，可以书写简单的gradle插件<br>
+① 全面理解Gradle - 执行时序 - 任玉刚 - CSDN博客【推荐理由】gradle执行时序，任玉刚出品<br>
+② 全面理解Gradle - 定义Task - 任玉刚 - CSDN博客【推荐理由】task定义，任玉刚出品<br>
+③ 一篇文章带你了解Gradle插件的所有创建方式【推荐理由】gradle插件的三种创建方式，已在玉刚说投稿<br>
+④ 写给 Android 开发者的 Gradle 系列（三）撰写 plugin - 掘金 【推荐理由】一个简单的小例子，让大家理解gradle插件的价值</p>
+<p>第十七关：设计模式 (建议学习时间：30-60天)<br>
+要求：熟悉6大基本原则、23种设计模式，并能在实际中灵活使用<br>
+① 《大话设计模式》【推荐理由】强烈建议买一本设计模式的书，好好看看，这事急不得<br>
+② 23种设计模式全解析 - 龙鱼鹿 - CSDN博客 【推荐理由】这是一篇文章，涵盖了全部设计模式，我收藏了好几年了，拿出来给大家看，但是只看这篇文章是远远不够的<br>
+③  https://t.zsxq.com/QzZZZNj【推荐理由】学习设计模式的精神，任玉刚出品<br>
+④ 如何通俗理解设计模式及其思想? - 掘金 【推荐理由】学习设计模式的精神，却把青梅嗅出品</p>
+<p>第十八关：MVC、MVP、MVVM (建议学习时间：14天)<br>
+要求：熟悉它们并会灵活使用<br>
+① MVC、MVP、MVVM，我到底该怎么选？ - 掘金【推荐理由】3M，理论结合小例子，好理解，玉刚说写作平台文章<br>
+② 一个小例子彻底搞懂 MVP - 掘金【推荐理由】讲解MVP，理论结合小例子，好理解，玉刚说写作平台文章<br>
+③ 我对移动端架构的思考 - 掘金【推荐理由】3M，Mr.S的作品，玉刚说写作平台文章</p>
+<p>第十九关：组件化 (建议学习时间：7天)<br>
+① Android 组件化最佳实践 - 掘金【推荐理由】一篇长文搞定，包括所有内容，分析+实例</p>
+<p>第二十关：jni和ndk基础 (建议学习时间：30-60天)<br>
+要求：熟悉jni和ndk语法，能进行简单的开发<br>
+① 《Android开发艺术探索》第14章【推荐理由】这是最最基本的jni和ndk入门<br>
+② JNI/NDK开发指南 - 技术改变生活（为理想而奋斗，为目标而努力！） - xyang0917 -...【推荐理由】找了半天，找到一个还凑合的教程，真是资源匮乏呀<br>
+③ https://developer.android.com/ndk/guides/【推荐理由】官方的ndk入门指南，讲了很多配置选项，推荐看看<br>
+④ Android JNI 编程实践 - 简书【推荐理由】讲解了如何注册jin函数表，也需要大家看一下<br>
+⑤ 书籍《Android C++高级编程 使用NDK》 【推荐理由】如果要系统学习ndk，还是推荐看看书</p>
+<p>第二十一关：安全 (建议学习时间：14天)<br>
+要求：熟悉各种发编译+二次打包工具，了解smali<br>
+① 浅析Android沙箱模型 - ljheee的博客 - CSDN博客【推荐理由】了解沙盒机制<br>
+② Smali语法介绍 - 任玉刚 - CSDN博客【推荐理由】smali入门，很简单，之前我写的<br>
+③ Smali 介绍 - CTF Wiki【推荐理由】复杂点的smali入门<br>
+④ android逆向分析之smali语法 - L25000的专栏 - CSDN博客【推荐理由】各种工具的使用，以及一个使用apktool进行破解的例子</p>
+<p>备注：各种工具软件大家网上自己找，反编译的话推荐jadx，比dex2jar+jd-gui更方便，smali有点复杂，如果不是特别需要，不建议深入学习，事实上，很多人私下研究安全其实就是为了破解。</p>
+<p>第二十二关：动态化 (建议学习时间：30-60天)<br>
+要求：阅读VirtualAPK的源码，熟悉常见的热修复和插件化原理<br>
+① Android 热修复Nuwa的原理及Gradle插件源码解析 - 区长的专栏 - CSDN博客【推荐理由】nuwa原理浅析<br>
+② Android 热修复 Tinker接入及源码浅析 - Hongyang - CSDN博客【推荐理由】Tinker原理解析，鸿洋出品<br>
+③ 滴滴插件化方案 VirtualApk 源码解析 - Hongyang - CSDN博客【推荐理由】VirtualAPK四大组件原理解析，鸿洋出品<br>
+④ Notion – The all-in-one workspace for your notes, ...【推荐理由】VirtualAPK资源加载机制<br>
+⑤ GitHub - tiann/understand-plugin-framework: demos ... 【推荐理由】插件化技术的方方面面，作者是田维术，必看的文章<br>
+⑥ GitHub - didi/VirtualAPK: A powerful and lightweig... 【推荐理由】VirtualAPK引擎和构建部分，必看</p>
+<figure data-type="image" tabindex="1"><img src="https://hashdog.cn/post-images/1657608464668.jpeg" alt="" loading="lazy"></figure>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Java后端学习路线]]></title>
+        <id>https://hashdog.cn/post/java-hou-duan-xue-xi-lu-xian/</id>
+        <link href="https://hashdog.cn/post/java-hou-duan-xue-xi-lu-xian/">
+        </link>
+        <updated>2022-07-12T06:39:02.000Z</updated>
+        <content type="html"><![CDATA[<p>考虑到部分Android同学有学习Java后端的需求，所以给大家准备了一个学习路线。</p>
+<p>Java后端和Android开发都使用Java语言，所以默认大家已经掌握了如下技能（如果没有，请自行补充）：<br>
+1、Java语言（含基本语法、jvm、多线程、io/nio）<br>
+2、IntelliJ IDEA（Java后端推荐的IDE，AndroidStudio基于IDEA开发）</p>
+<p>一、入门工具<br>
+主要内容有：Servelet、JSP、Tomcat、MySQL、JDBC<br>
+Servet： <a href="https://www.runoob.com/servlet/servlet-intro.html">Servlet 简介 | 菜鸟教程</a><br>
+JSP：<a href="https://www.runoob.com/jsp/jsp-intro.html">JSP 简介 | 菜鸟教程</a><br>
+JDBC：<a href="https://www.yiibai.com/jdbc/jdbc_quick_guide.html">JDBC快速入门教程 - JDBC教程™</a><br>
+MySQL：<a href="https://www.runoob.com/mysql/mysql-tutorial.html">MySQL 教程 | 菜鸟教程</a><br>
+Tomcat：<a href="https://www.jianshu.com/p/157334985eab">[转]Tomcat系列之服务器的安装与配置以及各组件详解 - 简书</a></p>
+<p>二、核心脚手架SSM<br>
+可以说Java后端就是运行在SSM上面的，所以搞懂SSM，就算入门了。<br>
+主要内容有：Spring（IOC/AOP）、Spring MVC、MyBatis</p>
+<p>这块内容比较多，建议通过书来系统学习，然后网络博客作为辅助。</p>
+<p>推荐图书：<br>
+Java EE互联网轻量级框架整合开发 SSM框架：<a href="https://item.jd.com/12122571.html">《Java EE互联网轻量级框架整合开发 SSM框架（Spring MVC Spring MyBat...</a><br>
+Spring实战：<a href="https://item.jd.com/12622829.html">《Spring实战 第5版》([美],克雷格·沃斯（Craig,Walls）)【摘要 书评 试读】-...</a></p>
+<p>三、核心中间件<br>
+主要内容有：<br>
+1、内存型key-value数据库：Redis<br>
+2、消息队列：kfaka<br>
+3、RPC框架：Dubbo<br>
+4、分布式服务框架：ZooKeeper</p>
+<p>Java后端的大部分工作，都是熟练使用各种中间件，而且同一个功能会有多个中间件，比如消息队列，除了kfaka，还有rocketmq、qmq等，建议大家先学习一个最主流的，等入门以后再学习其它。</p>
+<p>Redis：<a href="https://www.runoob.com/redis/redis-tutorial.html">Redis 教程 | 菜鸟教程</a></p>
+<p>kfaka：<br>
+<a href="https://www.cnblogs.com/qingyunzong/category/1212387.html">Kafka - 随笔分类 - 扎心了，老铁 - 博客园</a><br>
+<a href="http://kafka.apachecn.org/">http://kafka.apachecn.org/</a></p>
+<p>Dubbo：<br>
+<a href="https://segmentfault.com/a/1190000019896723">Dubbo 一篇文章就够了：从入门到实战 - 个人文章 - SegmentFault 思否</a><br>
+<a href="http://dubbo.apache.org/zh-cn/">home</a></p>
+<p>ZooKeeper：<br>
+<a href="https://blog.csdn.net/java_66666/article/details/81015302">Zookeeper入门看这篇就够了_技术分享-CSDN博客_zookeeper</a><br>
+<a href="https://www.jikexueyuan.com/course/zookeeper/">Zookeeper视频教程_Zookeeper在线学习-极客学院</a></p>
+<p>上面这些内容，学完后，自己尝试写一个demo，就算入门了。入门后面的事情，就需要在公司实际项目中实践了。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[ReactNative学习路线]]></title>
+        <id>https://hashdog.cn/post/reactnative-xue-xi-lu-xian/</id>
+        <link href="https://hashdog.cn/post/reactnative-xue-xi-lu-xian/">
+        </link>
+        <updated>2022-07-12T06:34:48.000Z</updated>
+        <content type="html"><![CDATA[<p>引言<br>
+RN和Flutter并称为目前最有前景的两大跨平台方案，由于RN的推出年限较早，很多公司都对RN进行了实践，比如qunar、美团、京东等，在踩坑的过程中产生了不少文章和总结。从目前来看，RN的成熟度要比Flutter高一些，Flutter还需要一线大厂的进一步踩坑和出坑，然后才能得到更为广泛的应用。</p>
+<p>本学习路线共有11关，如下。</p>
+<p>预备知识：RN的学习需要具备基本的web基础，比如html、css、js、es6，还有react.js，因此在正式开始前，大家需要先学习web基础的内容。</p>
+<p>图书和视频：《React Native移动开发实战》<br>
+RN 中文文档：<a href="https://reactnative.cn/docs/getting-started/">https://reactnative.cn/docs/getting-started/</a></p>
+<p>第一关：开发环境搭建（建议学习时间：1天）<br>
+学习资料：<br>
+① <a href="https://www.jianshu.com/p/4e80b42823d5">https://www.jianshu.com/p/4e80b42823d5</a> 【推荐理由】mac下安装homebrew<br>
+② <a href="http://www.runoob.com/nodejs/nodejs-install-setup.html">http://www.runoob.com/nodejs/nodejs-install-setup.html</a> 【推荐理由】各平台安装node<br>
+③ <a href="https://reactnative.cn/docs/getting-started/">https://reactnative.cn/docs/getting-started/</a> 【推荐理由】各平台搭建rn开发环境<br>
+④ <a href="https://blog.csdn.net/Calvin_zhou/article/details/78487121">https://blog.csdn.net/Calvin_zhou/article/details/78487121</a> 【推荐理由】VsCode 使用指南</p>
+<p>第二关：hello world（建议学习时间：1天）<br>
+学习资料：<br>
+① <a href="https://blog.csdn.net/developer_jiangqq/article/details/50456967">https://blog.csdn.net/developer_jiangqq/article/details/50456967</a> 【推荐理由】一个hello world<br>
+② <a href="https://blog.csdn.net/developer_jiangqq/article/details/50508534">https://blog.csdn.net/developer_jiangqq/article/details/50508534</a> 【推荐理由】开发调试<br>
+③ <a href="http://www.trinea.cn/android/react-native-hello-world/">http://www.trinea.cn/android/react-native-hello-world/</a> 【推荐理由】另一个hello world</p>
+<p>第三关：常用组件（建议学习时间：7天）<br>
+学习资料：<br>
+① https://blog.csdn.net/developer_jiangqq/article/details/50540718/【推荐理由】View组件<br>
+② https://blog.csdn.net/developer_jiangqq/article/details/50557632【推荐理由】Image组件<br>
+③ https://blog.csdn.net/developer_jiangqq/article/details/50550518 【推荐理由】Text组件<br>
+④ https://blog.csdn.net/developer_jiangqq/article/details/50589570 【推荐理由】TextInput组件<br>
+⑤ https://blog.csdn.net/jiangqq781931404/article/details/50609194  【推荐理由】ScrollView组件<br>
+⑥  https://blog.csdn.net/developer_jiangqq/article/details/50635659【推荐理由】ListView组件<br>
+⑦ https://blog.csdn.net/jiangqq781931404/article/category/9265089 【推荐理由】更多组件请参考这里，建议当做文档来参考<br>
+⑧ https://www.jianshu.com/p/18fd4b438958 【推荐理由】开源UI组件库</p>
+<p>第四关：布局（建议学习时间：3天）<br>
+学习资料：<br>
+① https://www.kancloud.cn/kancloud/react-native-lession/86409 【推荐理由】RN的CSS布局<br>
+② http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html 【推荐理由】Flex布局详解，来自阮一峰</p>
+<p>第五关：导航器（建议学习时间：3天）<br>
+学习资料：<br>
+① https://www.jianshu.com/p/39250349a3ef 【推荐理由】老版的导航器<br>
+② https://www.jianshu.com/p/f39f020197ef 【推荐理由】新版导航器：StackNavigator、TabNavigator<br>
+③ https://www.jianshu.com/p/3be112698d68 【推荐理由】新版导航器：DrawerNavigator</p>
+<p>第六关：动画（建议学习时间：3天）<br>
+学习资料：<br>
+① https://www.cnblogs.com/vajoy/p/5299315.html 【推荐理由】简单动画，例子加效果<br>
+② http://www.cnblogs.com/vajoy/p/5425836.html【推荐理由】复杂动画，例子加效果<br>
+③ https://segmentfault.com/a/1190000007621628 【推荐理由】另一个动画例子</p>
+<p>第七关：存储（建议学习时间：3天）<br>
+学习资料：<br>
+① https://www.jianshu.com/p/55263b414090 【推荐理由】AsyncStorage<br>
+② https://blog.csdn.net/xukongjing1/article/details/70141157 【推荐理由】SQlite<br>
+③ https://www.jianshu.com/p/7e6c98f221ff 【推荐理由】另外一种思路，自己封装SQlite模块</p>
+<p>第八关：网络（建议学习时间：3天）<br>
+学习资料：<br>
+① https://reactnative.cn/docs/0.42/network/【推荐理由】Fetch基础<br>
+② https://blog.csdn.net/xiangzhihong8/article/details/72848386 【推荐理由】Fetch实际的使用例子<br>
+③ http://www.hangge.com/blog/cache/detail_1614.html 【推荐理由】获取网络状态</p>
+<p>第九关：原生模块开发（建议学习时间：7天）<br>
+学习资料：<br>
+① https://reactnative.cn/docs/0.51/native-modules-android/【推荐理由】Android Toast例子<br>
+② https://www.jianshu.com/p/4e72c2966c9e 【推荐理由】iOS 原生模块开发例子<br>
+③ https://www.jianshu.com/p/091a68ea1ca7 【推荐理由】将原生模块上传到npm</p>
+<p>第十关：原理（建议学习时间：7天）<br>
+学习资料：<br>
+① https://cloud.tencent.com/developer/article/1038740【推荐理由】热更新原理<br>
+② https://zhuanlan.zhihu.com/react-native-tips 【推荐理由】整体架构和工作原理</p>
+<p>第十一关：实战（建议学习时间：30天）<br>
+学习资料：<br>
+① https://github.com/race604/ZhiHuDaily-React-Native【推荐理由】知乎日报客户端<br>
+② https://github.com/poberwong/react-native-gank 【推荐理由】gank.io客户端</p>
+<figure data-type="image" tabindex="1"><img src="https://hashdog.cn/post-images/1657607740564.jpeg" alt="" loading="lazy"></figure>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Web基础学习路线]]></title>
+        <id>https://hashdog.cn/post/web-ji-chu-xue-xi-lu-xian/</id>
+        <link href="https://hashdog.cn/post/web-ji-chu-xue-xi-lu-xian/">
+        </link>
+        <updated>2022-07-12T06:31:10.000Z</updated>
+        <content type="html"><![CDATA[<p>欢迎来到月满楼，预祝打怪升级愉快。</p>
+<p>引言<br>
+Web前端的入门要比Android容易地多，主要有两方面原因。首先前端的知识点稍微简单一些，其次前端技术的文档都特别好，清晰易懂且都有实际的例子，Web前端工程师简称FE。</p>
+<p>在FE眼里，原生是指JavaScript。他们日常开发很少用JavaScript，往往都是用框架，比如angular、vue和react，由于ReactNative的原因，这里推荐大家学习react。正是因为如此，前端框架的迭代速度特别快，所以前端同学要不断地学习新技术才能跟得上潮流，这方面移动端就好很多了。</p>
+<p>对于我们来说，不需要研究那么多框架，更不需要去研究框架的原理，只要做到会有就行。我们需要先学习最基本的东西：HTML、CSS、JavaScript以及es6语法，这些东西是万年不变的。除此之外，当前最火的两个框架vue和react，还有常见的构建工具比如webpack，这些都是需要我们去学习的。</p>
+<p>本学习路线共有6关，如下。</p>
+<p>第一关：HTML（建议学习时间：一个月）<br>
+知识点：掌握HTML和HTML5的常用标签和语法</p>
+<p>学习资料：<br>
+① <a href="http://www.w3school.com.cn/html/index.asp">HTML 教程</a> 【推荐理由】w3c值得信赖，全面，理论结合例子，还可以线上撸码。</p>
+<p>第二关：CSS（建议学习时间：2周）<br>
+知识点：熟练使用CSS和CSS3</p>
+<p>学习资料：<br>
+① <a href="http://www.w3school.com.cn/css/index.asp">CSS 教程</a> 【推荐理由】w3c值得信赖，全面，理论结合例子，还可以线上撸码。<br>
+② <a href="http://www.w3school.com.cn/css3/index.asp">CSS3 教程</a> 【推荐理由】w3c值得信赖，全面，理论结合例子，还可以线上撸码。</p>
+<p>第三关：JavaScript（建议学习时间：一个月）<br>
+知识点：熟悉JavaScript的语法，包括变量和方法定义、闭包、原型链</p>
+<p>学习资料：<br>
+① <a href="http://www.w3school.com.cn/js/index.asp">JavaScript 教程</a> 【推荐理由】w3c值得信赖，全面，理论结合例子，还可以线上撸码。</p>
+<p>第四关：es6语法（建议学习时间：2周）<br>
+知识点：熟悉es6新特性，比如let和const、箭头表达式</p>
+<p>学习资料：<br>
+① <a href="http://es6.ruanyifeng.com/">ECMAScript 6入门</a> 【推荐理由】全面，理论结合例子，阮一峰官网值得信赖。</p>
+<p>第五关：react（建议学习时间：一个月）<br>
+知识点：react框架的基本使用方式</p>
+<p>学习资料：<br>
+① <a href="https://reactjs.org/docs/">https://reactjs.org/docs/</a> 【推荐理由】英文官方文档，完善<br>
+② <a href="https://react.docschina.org/docs/hello-world.html">Hello World - React</a> 【推荐理由】中文文档，完善，好理解</p>
+<p>第六关：vue（建议学习时间：一个月）<br>
+知识点：vue框架的基本使用方式</p>
+<p>学习资料：<br>
+① <a href="https://cn.vuejs.org/v2/guide/">介绍 — Vue.js</a> 【推荐理由】vue官方文档，中文版，门槛很低<br>
+说明：react和vue二选一即可，由于rn的关系，推荐大家优先学习react</p>
+<p>第七关：npm、webpack和gulp语法（建议学习时间：3天）<br>
+知识点：了解即可，不用研究太多</p>
+<p>学习资料：<br>
+① npm： <a href="https://zhuanlan.zhihu.com/p/27539908">npm入门 - 知乎</a> 【推荐理由】详细，入门够了<br>
+② webpack：<a href="https://webpack.docschina.org/guides/getting-started">起步</a> 【推荐理由】中文文档，完善，好理解<br>
+③ gulp：<a href="https://www.gulpjs.com.cn/docs/api/">gulp.js - 基于流的自动化构建工具。 | gulp.js 中文网</a> 【推荐理由】中文文档，完善，好理解</p>
+<figure data-type="image" tabindex="1"><img src="https://hashdog.cn/post-images/1657607494374.jpeg" alt="" loading="lazy"></figure>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Android入门学习路线]]></title>
+        <id>https://hashdog.cn/post/android-ru-men-xue-xi-lu-xian/</id>
+        <link href="https://hashdog.cn/post/android-ru-men-xue-xi-lu-xian/">
+        </link>
+        <updated>2022-07-12T06:25:25.000Z</updated>
+        <content type="html"><![CDATA[<p>欢迎来到镜花水月，预祝打怪升级愉快。</p>
+<p>引言<br>
+什么样的人需要入门？他可能是应届生，也可能是从其它行业转行过来的。</p>
+<p>入门的误区有两个：</p>
+<ol>
+<li>什么都想学</li>
+<li>深入细节无法自拔，导致只见树木不见森林</li>
+</ol>
+<p>这两个都是要极力避免的，很多人觉得Android知识点太多，看着发慌，不知道先学啥后学啥。在我的规划中，挑选了Android入门必需的那些知识点，如果我没有列出来，那么说明在入门过程中你压根就不需要学习。具体规划大家看下面的思维导图。</p>
+<p>如果你足够聪明，你会发现有一点我没有列在思维导图里，那就是这类问题：</p>
+<ol>
+<li>如何打开一个网页？如何吊起拨号键盘？如何发短信？</li>
+<li>如何访问速度传感器并获取当前速度等</li>
+</ol>
+<p>我没有列进去，是因为这部分内容太细节，而且属于死记硬背型知识点，学了也容易忘，那就干脆别学了，遇到问题时百度一下，就几行代码的事。</p>
+<p>本学习路线共有 17 关，如下。</p>
+<p>第一关：四大组件（建议学习时间：一周）<br>
+知识点：四大组件的使用、Activity启动模式、Service的start和bind</p>
+<p>学习资料：<br>
+① Android 四大组件 - 简书 【推荐理由】全面，内容参考了艺术探索。<br>
+② 彻底弄懂Activity四大启动模式 - Android研发专栏 - CSDN博客 【推荐理由】理论配合例子，好理解。</p>
+<p>第二关：布局和控件（建议学习时间：3天）<br>
+知识点：常见的布局和布局参数</p>
+<p>学习资料：<br>
+① Android系统五大布局详解Layout - 漫步云端 - CSDN博客 【推荐理由】比较全面，理论结合例子。<br>
+② Android 基础：常用布局 介绍 &amp; 使用（附 属性查询） - 简书 【推荐理由】对布局参数进行了详细地介绍。</p>
+<p>第三关：简单自定义View（建议学习时间：一周）<br>
+知识点：会简单的自定义View即可。在入门阶段，不适合了解measure、layout和draw过程，不建议去学习复杂的自定义View。</p>
+<p>学习资料：<br>
+① 自定义View，有这一篇就够了 - 简书 【推荐理由】比较全面，内容参考了艺术探索，靠谱。<br>
+② GitHub - chenzongwen/MiClockView 【推荐理由】一个闹钟的实际例子。<br>
+③ Android 自定义 View 合集 - Android - 掘金 【推荐理由】自定义View合集，可以当做字典用。</p>
+<p>第四关：动画和手势（建议学习时间：2周）<br>
+要求：掌握View动画、属性动画、布局动画、手势<br>
+学习资料：<br>
+① Android中的View动画和属性动画 - 简书【推荐理由】View动画+属性动画，有讲解，有例子，还有美女图片看。<br>
+② HenCoder Android 自定义 View 1-6：属性动画 Property Animat...【推荐理由】hencoder出品，非常非常详细，推荐当做文档来查看<br>
+③ Android属性动画深入分析：让你成为动画牛人 - 任玉刚 - CSDN博客 【推荐理由】深度分析属性动画，任玉刚写的<br>
+④ android 动画系列 (3) - layoutAnimation 视图动画 - 简书【推荐理由】LayoutAnimation，可以帮助大家实现一些特殊的效果，必备<br>
+⑤ RecyclerView 与 LayoutAnimation 实现的进入动画（一 ）: List -... 【推荐理由】LayoutAnimation结合RecyclerView的例子，进一步理解<br>
+⑥ 安卓自定义View进阶-手势检测(GestureDetector) 【推荐理由】普通手势检测，有说明有例子有效果图，好理解<br>
+⑦ 安卓自定义View进阶-缩放手势检测(ScaleGestureDecetor) 【推荐理由】缩放手势检测，有说明有例子有效果图，好理解</p>
+<p>第五关：网络（建议学习时间：1周）<br>
+要求：了解HTTP/HTTPS、状态码、header，get和post等；掌握网络请求API和相关网络库；熟悉长连接。<br>
+备注：网络库和文件上传将在开源库部分讲解<br>
+学习资料：<br>
+① HTTP 必知必会的那些 【推荐理由】HTTP/HTTPS基础知识，简单易懂<br>
+② Android HttpURLConnection详解 - 简书 【推荐理由】一个HttpURLConnection的小例子，清晰易懂<br>
+③ 手把手教你写 Socket 长连接 【推荐理由】手把手写socket长连接，长连接不再神秘</p>
+<p>第六关：图片加载（建议学习时间：2周）<br>
+要求：了解drawable加载规则以及图片缓存<br>
+备注：图片加载框架将在开源库部分讲解<br>
+学习资料：<br>
+① Android中Bitmap内存优化 - 简书 【推荐理由】深入浅出，告诉你一张图片到底占用多大内存<br>
+② Android drawable微技巧，你所不知道的drawable的那些细节 - 郭霖的专栏 - ...【推荐理由】告诉你图片放在不同drawable目录下的差别，郭霖出品，这理由够充分吧<br>
+③ Android照片墙完整版，完美结合LruCache和DiskLruCache - 郭霖的专栏 - ... 【推荐理由】LruCache和DiskLruCache，图片的缓存策略，郭霖出品<br>
+④ Android DiskLruCache完全解析，硬盘缓存的最佳方案 - 郭霖的专栏 - CSDN博... 【推荐理由】DiskLruCache的原理，郭霖出品</p>
+<p>第七关：文件和数据库 (建议学习时间：1周)<br>
+要求：了解文件流、sqlite<br>
+学习资料：<br>
+① Java 文件流总结 - 简书 【推荐理由】详细介绍了文件输入输出流<br>
+② Java 随机访问文件_w3cschool【推荐理由】Java随机访问文件<br>
+③ Java 序列化的高级认识 【推荐理由】Java的序列化原理以及对象输入输出流，来自IBM社区的经典文章<br>
+④ Android SQLite详解 - 简书【推荐理由】sqlite数据库如何使用<br>
+⑤ Concurrent database access - Dmytro Danylyk 【推荐理由】sqlite到底是线程安全的吗？</p>
+<p>第八关：Handler (建议学习时间：3天)<br>
+要求：会使用Handler，知道looper的概念<br>
+学习资料：<br>
+① Android Handler的基本使用 - 简书 【推荐理由】了解Handler最基本的使用方式，文章清晰易懂<br>
+② Android Handler详解 - 简书【推荐理由】简单理解Handler的内部原理</p>
+<p>第九关：异步线程池 (建议学习时间：7天)<br>
+要求：熟练使用线程、线程池、线程同步<br>
+学习资料：<br>
+① Android 线程和线程池一篇就够了 - Android - 掘金【推荐理由】一篇文章掌握Android中的线程和线程池，全面易懂<br>
+② Java线程同步：synchronized锁住的是代码还是对象 - 叉叉哥的BLOG - CSDN博...【推荐理由】彻底了解锁到底是哪个对象<br>
+③ java中的wait、notify、notifyAll - 简书 【推荐理由】了解wait、notify、notifyAll<br>
+④ Java并发编程中级篇(三)：使用CountDownLatch控制多线程并发等待 - 阿拉德大陆的魔... 【推荐理由】CountDownLatch，更优雅的线程同步方式</p>
+<p>第十关：Resources (建议学习时间：1天)<br>
+要求：掌握Android中访问资源的方式，好吧，这一关有点简单<br>
+学习资料：<br>
+① Android  xml资源文件中@、@android:type、@*、？、@ 含义和区别 - 小M... 【推荐理由】R的使用技巧<br>
+② Android根据资源名获取资源ID - 技术小黑屋【推荐理由】如何通过资源名字找到资源id</p>
+<p>第十一关：Retrofit / Okhttp (建议学习时间：3天)<br>
+要求：会使用Retrofit / Okhttp进行日常开发，复杂功能可以通过搜索和查阅官方文档解决即可<br>
+学习资料：<br>
+① Retrofit   RxJava ＋ OkHttp 让网络请求变的简单-基础篇 - 简书 【推荐理由】retrofit基础篇，作者是简书优秀作者<br>
+② Retrofit   RxJava ＋ OkHttp 让网络请求变的简单-封装篇 - 简书【推荐理由】retrofit封装篇，作者是简书优秀作者<br>
+③ Retrofit 【推荐理由】retrofit官方API介绍</p>
+<p>第十二关：RxJava (建议学习时间：3天)<br>
+要求：会使用rxjava进行日常开发，复杂功能可以通过搜索和查阅官方文档解决即可<br>
+学习资料：<br>
+① 给 Android 开发者的 RxJava 详解 【推荐理由】rxjava入门一篇文章搞定，作者是扔物线，所用版本较低，但所幸变化不大<br>
+② RxJava2 只看这一篇文章就够了 - 掘金【推荐理由】rxjava2的API大全，这篇文章非常长，建议浏览常用的API，其他API需要时再查</p>
+<p>第十三关：Glide (建议学习时间：1天)<br>
+要求：会使用glide进行图片加载<br>
+学习资料：<br>
+① Android图片加载框架最全解析（八），带你全面了解Glide 4的用法 - 郭霖的专栏 - CS... 【推荐理由】一篇文章掌握glide，郭霖出品，这一篇真的够了，就加载个图片而已，没那么复杂</p>
+<p>第十四关：注解框架 (建议学习时间：3天)<br>
+要求：熟练使用注解框架<br>
+学习资料：<br>
+① 在 Android Studio 中使用 Annotation Processor - 云在千峰 【推荐理由】Annotation Processor介绍<br>
+② Android注解快速入门和实用解析 - 简书【推荐理由】注解快速入门，作者为简书优秀作者<br>
+③ Android Butter Knife 框架——最好用的View注入 - 简书 【推荐理由】butter knife 使用指南，简单直接</p>
+<p>第十五关：Architecture components (建议学习时间：14天)<br>
+要求：熟练使用Architecture components，比如 lifecycle、room等<br>
+学习资料：<br>
+① Android Architecture Components 只看这一篇就够了 - 掘金 【推荐理由】一篇文章搞定它们，玉刚说写作平台赞助<br>
+② GitHub - googlesamples/android-architecture-compon...【推荐理由】官方例子，下载下来看看</p>
+<p>第十六关：代码管理 (建议学习时间：14天)<br>
+学习资料：<br>
+Git：https://www.liaoxuefeng.com/wiki/00137395163059296... 【推荐理由】跟廖雪峰学git</p>
+<p>Code review：选修，入职后，你的团队会教你的</p>
+<p>代码风格：不同人不一样，这是我的代码风格，和Android源码的代码风格保持一致，供你们参考：https://pan.baidu.com/s/1PPONFjVfNP1PYt6mtQ4ZtQ</p>
+<p>单元测试：<br>
+① https://mp.weixin.qq.com/s/smSrrUWR9DBYXsusS6y_ig 【推荐理由】一篇文章搞定，玉刚说写作平台赞助<br>
+② https://juejin.im/post/5b66de2c6fb9a04fbd1b4725【推荐理由】UI自动化测试详解，玉刚说写作平台赞助<br>
+③ https://juejin.im/post/5b6851f65188251ac5551c63 【推荐理由】UI自动化测试例子，却把青梅嗅出品</p>
+<p>第十七关：性能优化 (建议学习时间：7天)<br>
+要求：熟悉性能优化的常见套路并能进行相应优化<br>
+学习资料：<br>
+① https://juejin.im/post/5b50b017f265da0f7b2f649c【推荐理由】老规矩，一篇文章搞定，玉刚说写作平台赞助<br>
+② https://juejin.im/post/5baa3eb76fb9a05cdb103c74【推荐理由】启动速度优化，玉刚说写作平台赞助<br>
+③ https://mp.weixin.qq.com/s/_s88Xjti0YwO4rayKvF5Dg 【推荐理由】内存优化，玉刚说写作平台赞助<br>
+④ https://juejin.im/post/5b9e61c7e51d450e41153cdd 【推荐理由】布局优化，玉刚说写作平台赞助</p>
+<figure data-type="image" tabindex="1"><img src="https://hashdog.cn/post-images/1657607252799.jpeg" alt="" loading="lazy"></figure>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[微信小程序学习路线]]></title>
+        <id>https://hashdog.cn/post/wei-xin-xiao-cheng-xu-xue-xi-lu-xian/</id>
+        <link href="https://hashdog.cn/post/wei-xin-xiao-cheng-xu-xue-xi-lu-xian/">
+        </link>
+        <updated>2022-07-12T06:20:02.000Z</updated>
+        <content type="html"><![CDATA[<p>引言</p>
+<p>微信小程序是什么不需要过多介绍了，它和Flutter以及RN相比简单了许多，因为小程序运行在微信之上，不需要直接和平台（iOS + Android）打交道，语言也是Web开发那一套，这就使得微信小程序的学习和开发变得异常简单。</p>
+<p>微信小程序的官方文档是中文的，简单易懂同时也具有权威性，所以本学习路线也是围绕着官方文档来整理。事实上，网上没有像样的文章，因为小程序实在是太简单了，微信对小程序的能力做了限定，开发人员只需要根据API去填空就行了。</p>
+<p>本学习路线共有6关，如下。</p>
+<p>预备知识：小程序的学习需要具备基本的web基础，比如html、css、js、es6，因此在正式开始前，大家需要先学习web基础的内容。</p>
+<p>极客时间视频专栏：《9小时搞定微信小程序开发》<br>
+开发文档：<a href="https://developers.weixin.qq.com/miniprogram/dev/">起步 · 小程序</a><br>
+开发教程：<a href="https://developers.weixin.qq.com/ebook?action=get_post_info&amp;docid=0008aeea9a8978ab0086a685851c0a">教程 | 《小程序开发指南》</a><br>
+设计文档：<a href="https://developers.weixin.qq.com/miniprogram/design/index.html?t=19022220">微信小程序设计指南 · 小程序</a></p>
+<p>第一关：简单入门（建议学习时间：3天）<br>
+核心内容：开发环境搭建、hello world、生命周期、代码结构、发布和上传<br>
+学习资料：<br>
+① <a href="https://developers.weixin.qq.com/miniprogram/dev/">起步 · 小程序</a></p>
+<p>第二关：框架入门（建议学习时间：3天）<br>
+核心内容：配置、生命周期、路由、视图层、自定义组件<br>
+学习资料：<br>
+① <a href="https://developers.weixin.qq.com/miniprogram/dev/framework/MINA.html">框架 · 小程序</a></p>
+<p>第三关：常用组件（建议学习时间：3天）<br>
+优先级较高的组件：icon、text、button、checkbox、input、label、radio、switch、image、scrollview、canvas、map<br>
+其他组件需要的时候查文档即可，文档中有介绍和例子，特别好懂<br>
+学习资料：<br>
+① <a href="https://developers.weixin.qq.com/miniprogram/dev/component/">组件 · 小程序</a></p>
+<p>第四关：常用API（建议学习时间：3天）<br>
+优先级较高的API：网络、存储、设备、交互、动画、媒体<br>
+其他API需要的时候查文档即可，文档中有介绍和例子，特别好懂<br>
+学习资料：<br>
+① <a href="https://developers.weixin.qq.com/miniprogram/dev/api/">API · 小程序</a></p>
+<p>第五关：实战（建议学习时间：7天）<br>
+研究下开源项目的代码<br>
+学习资料：<br>
+① <a href="https://github.com/zce/weapp-demo">GitHub - zce/weapp-demo: 微信小程序示例教程（豆瓣电影），WeChat Ap...</a> 豆瓣电影<br>
+② <a href="https://github.com/lypeer/wechat-weapp-gank">GitHub - lypeer/wechat-weapp-gank</a> gank.io客户端<br>
+③ <a href="https://github.com/opendigg/awesome-github-wechat-weapp">GitHub - opendigg/awesome-github-wechat-weapp: 微信小...</a> 更多开源项目</p>
+<p>第六关：扩展（选修）：<br>
+① <a href="https://tencent.github.io/wepy/">WePY | 小程序组件化开发框架</a> 微信官方的组件化开发框架<br>
+② <a href="https://taro.aotu.io/">Taro - A set of multi-end development solutions th...</a> 一款小程序的跨平台框架</p>
+<figure data-type="image" tabindex="1"><img src="https://hashdog.cn/post-images/1657606837328.jpeg" alt="" loading="lazy"></figure>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Flutter学习路线]]></title>
+        <id>https://hashdog.cn/post/flutter-xue-xi-lu-xian/</id>
+        <link href="https://hashdog.cn/post/flutter-xue-xi-lu-xian/">
+        </link>
+        <updated>2022-07-11T05:16:56.000Z</updated>
+        <content type="html"><![CDATA[<p>引言<br>
+Flutter大家不陌生吧，它和RN并称为目前最有前景的两大跨平台方案。提到Flutter就不能不提Fuchsia，是由Google公司开发的继Android和Chrome OS之后的第三个系统。已在Github中公开的部分源码可以得知。Google对于Fuchsia的说明是“Pink（粉红）+Purple（紫色）=Fuchsia（灯笼海棠，一个新的操作系统）”，Fuchsia也被外界解读为布局物联网的操作系统。</p>
+<p>Flutter经历了一系列的beta，终于到了release阶段，不过Flutter更像是布局未来，我们有理由相信Flutter的未来肯定会更加宏大。</p>
+<p>目前国内主要是咸鱼、美团等公司做了实践，其他公司都还在观望中。</p>
+<p>Flutter和和Android不一样。Android已经到了探究原理和最佳实践的阶段了，但是Flutter仅仅是在入门阶段，所以我们要提前学习布局未来。</p>
+<p>本学习路线共有10关，如下。</p>
+<p>第一关：开发环境搭建（建议学习时间：3天）<br>
+学习资料：<br>
+① Mac：<a href="https://mp.weixin.qq.com/s/6lmhHNBRcmoNqkMHaCBx8A">Flutter 安装和初体验</a> 【推荐理由】任玉刚写的<br>
+② Windows：<a href="https://www.jianshu.com/p/a78fd5e5116d">Flutter之Windows环境搭建 - 简书</a> 【推荐理由】全面、正确<br>
+③ Linux：<a href="https://flutter.io/docs/get-started/install/linux">Linux install  - Flutter</a> 【推荐理由】英文文档，没找到中文的，和Mac很类似</p>
+<p>第二关：Hello world（建议学习时间：3天）<br>
+学习资料：<br>
+① <a href="https://juejin.im/post/5bc8916ee51d450e9e447eee">Flutter学习指南：编写第一个应用 - 掘金</a>【推荐理由】水晶虾饺出品，任玉刚规划和审核<br>
+② <a href="https://zhuanlan.zhihu.com/p/34617369">创建你的第一个Flutter APP - 知乎</a> 【推荐理由】知乎最火的Flutter专栏</p>
+<p>第三关：Dart（建议学习时间：1周）<br>
+要求：熟悉Dart语法，包括变量、函数、语句、Class、泛型等<br>
+学习资料：<br>
+① <a href="https://juejin.im/post/5bcc8527f265da0aff17729a">Flutter学习指南：熟悉Dart语言 - 掘金</a> 【推荐理由】水晶虾饺出品，任玉刚规划和审核，包含Dart常用语法<br>
+② <a href="https://www.dartlang.org/guides/language/language-tour">Language Tour | Dart</a> 【推荐理由】英文官方文档，包含Dart全部语法<br>
+③ <a href="https://dartpad.dartlang.org/215ba63265350c02dfbd586dfd30b8c3">https://dartpad.dartlang.org/215ba63265350c02dfbd586dfd30b8c3</a> 【推荐理由】可在线撸码、运行（需科学上网）</p>
+<p>第四关：布局和widget（建议学习时间：1周）<br>
+要求：熟悉常见布局和控件，比如Text、Image、FlatButton、Container等<br>
+学习资料：<br>
+① <a href="https://juejin.im/post/5bd54b7be51d456c430e35f6">Flutter学习指南：UI布局和控件 - 掘金</a>【推荐理由】水晶虾饺出品，任玉刚规划和审核，包含场景布局和widget。<br>
+② <a href="https://juejin.im/post/5b8ce76f51882542c0626887">Flutter快速上车之Widget - 掘金</a> 【推荐理由】咸鱼出品，详细，有一定思考。<br>
+③ <a href="https://www.jianshu.com/p/fccb4c43c268">Flutter 布局常用的 widgets（Common layout widgets） - 简书</a> 【推荐理由】图文并茂，美观，对布局这块通过代码+效果图的方式来描述，非常适合学习<br>
+④ <a href="https://flutter.io/docs/reference/widgets">Flutter widget index  - Flutter</a> 【推荐理由】所有的widget文档，当做文档来使用</p>
+<p>第五关：ListView(建议学习时间：3天)<br>
+学习资料：<br>
+① <a href="https://docs.flutter.io/flutter/widgets/ListView-class.html">ListView class - widgets library - Dart API</a>【推荐理由】官方文档<br>
+② <a href="https://juejin.im/post/5b3abfc4518825622c14a6f1">Flutter 实例 - 加载更多的ListView - 掘金</a> 【推荐理由】简单易懂</p>
+<p>第六关：交互、手势和动画(建议学习时间：7天)<br>
+学习资料：<br>
+① <a href="https://juejin.im/post/5bdf10156fb9a049f66b8c2f">Flutter学习指南：交互、手势和动画 - 掘金</a>【推荐理由】一篇长文搞定，玉刚说写作平台出品<br>
+② <a href="https://zhuanlan.zhihu.com/p/47156664">Flutter 如何绘制动画 - 知乎</a> 【推荐理由】一个动画的小例子</p>
+<p>第七关：文件IO、数据库和网络(建议学习时间：7天)<br>
+学习资料：<br>
+① <a href="https://juejin.im/post/5bf13747e51d4552ee424078">Flutter学习指南：文件、存储和网络 - 掘金</a>【推荐理由】一篇长文搞定，玉刚说写作平台出品<br>
+② <a href="https://www.jianshu.com/p/7ac3ce2bc0c6">Flutter知识点:数据存储之sqflite - 简书</a> 【推荐理由】一个数据库的小例子<br>
+③ <a href="https://juejin.im/post/5b3f0c406fb9a04faa7984b5">flutter之从零开始搭建（三）之 网络请求 - 掘金</a> 【推荐理由】一个网络请求的小例子</p>
+<p>第八关：插件开发、性能评估(建议学习时间：7天)<br>
+学习资料：<br>
+① <a href="https://juejin.im/post/5c123e0c6fb9a049ff4dffbe">Flutter学习指南：封装 API 插件 - 掘金</a>【推荐理由】插件开发，玉刚说写作平台出品<br>
+② <a href="https://mp.weixin.qq.com/s/4G6hWW6GxnmV_j6d2rVBpA">8 篇文章，再学不会 Flutter 你来打我！</a> 【推荐理由】性能评估，玉刚说写作平台出品</p>
+<p>第九关：工程化 &amp; 资料(建议学习时间：30天)<br>
+学习资料：<br>
+① <a href="https://zhuanlan.zhihu.com/xytech">Flutter干货学堂 - 知乎</a>【推荐理由】咸鱼实践，作为国内Flutter的先驱，它的文章要读一下<br>
+② <a href="https://pub.dartlang.org/flutter">Flutter Packages</a> 【推荐理由】Flutter的官方packages集合，可当做文档来使用<br>
+③ <a href="https://flutter.io/docs">Flutter Documentation  - Flutter</a> 【推荐理由】Flutter官方文档，推荐大家在Chrome中安装一个划词翻译插件，方便阅读英文文档<br>
+④ <a href="https://flutterchina.club/docs/">Flutter文档  - Flutter中文网</a> 【推荐理由】Flutter中文翻译文档，只推荐给英文较差的同学<br>
+⑤ <a href="https://github.com/flutter/flutter/wiki/Add-Flutter-to-existing-apps">Add Flutter to existing apps · flutter/flutter Wik...</a> 【推荐理由】讲述原生APP中如何引入Flutter</p>
+<p>第十关：实践(建议学习时间：30天)<br>
+学习资料：<br>
+① <a href="http://www.wanandroid.com/blog/show/2157">仿WanAndroid客户端 Flutter版-玩Android - wanandroid.com</a>【推荐理由】WanAndroid Flutter客户端<br>
+② <a href="https://github.com/lijinshanmx/flutter_gank">GitHub - lijinshanmx/flutter_gank: 🔥 「干货集中营」是一款注重体...</a> 【推荐理由】Gank.io Flutter客户端<br>
+③ <a href="https://github.com/flutter/flutter/tree/master/examples">flutter/examples at master · flutter/flutter · Git...</a> 【推荐理由】Flutter官方示例，常见例子都可以找到，尤其推荐那个flutter_gallery项目</p>
+<figure data-type="image" tabindex="1"><img src="https://hashdog.cn/post-images/1657516663518.jpeg" alt="" loading="lazy"></figure>
+]]></content>
+    </entry>
+</feed>

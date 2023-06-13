@@ -1,0 +1,244 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>macOS下搭建Flutter开发环境 | 哈希狗</title>
+<link rel="shortcut icon" href="https://hashdog.cn/favicon.ico?v=1686644727962">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://hashdog.cn/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="macOS下搭建Flutter开发环境 | 哈希狗 - Atom Feed" href="https://hashdog.cn/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="首先要下载必要的文件
+
+我选择开发工具的是Android Studio，因为我本身就是开发Android的方便使用我就直接使用Android Studio了，当然你们还可以选择IDEA或者Visual Studio
+
+
+Flutter sd..." />
+    <meta name="keywords" content="Flutter,学习路线" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://hashdog.cn">
+  <img class="avatar" src="https://hashdog.cn/images/avatar.png?v=1686644727962" alt="">
+  </a>
+  <h1 class="site-title">
+    哈希狗
+  </h1>
+  <p class="site-description">
+    保持好奇
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+        <a href="https://github.com/hashdogcn" target="_blank">
+          <i class="ri-github-line"></i>
+        </a>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              macOS下搭建Flutter开发环境
+            </h2>
+            <div class="post-info">
+              <span>
+                2020-09-07
+              </span>
+              <span>
+                3 min read
+              </span>
+              
+                <a href="https://hashdog.cn/tag/N0CQvW_iu/" class="post-tag">
+                  # Flutter
+                </a>
+              
+                <a href="https://hashdog.cn/tag/XWqx-1xXw/" class="post-tag">
+                  # 学习路线
+                </a>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content" v-pre>
+                <p>首先要下载必要的文件</p>
+<blockquote>
+<p>我选择开发工具的是Android Studio，因为我本身就是开发Android的方便使用我就直接使用Android Studio了，当然你们还可以选择IDEA或者Visual Studio</p>
+</blockquote>
+<ul>
+<li><a href="https://flutter.dev/docs/development/tools/sdk/releases?tab=macos" title="Flutter sdk">Flutter sdk</a></li>
+<li><a href="https://developer.android.com/studio/" title="Android Studio">Android Studio</a></li>
+</ul>
+<h3 id="安装flutter-sdk">安装flutter sdk</h3>
+<p>解压上面下载的sdk到你的工作目录，我这里就放到了Users/xxx目录下<br>
+<img src="https://hashdog.cn/post-images/1599445887060.png" alt="" loading="lazy"><br>
+然后把环境变量添加到base_profile里面，我们使用vi工具操作（我一般习惯性用vi，你们熟悉其他编辑器也可以使用的）</p>
+<pre><code class="language-shell">vi ~/.bash_profile 
+</code></pre>
+<p><img src="https://hashdog.cn/post-images/1599445903622.png" alt="" loading="lazy"><br>
+添加刚刚解压的flutter sdk的目录到path</p>
+<pre><code class="language-shell">export PATH=$PATH:/Users/xxxx/flutter/bin
+</code></pre>
+<p>这个是我当前解压的目录，xxxx为用户名，仅作参考，其他目录也是一样的</p>
+<p>然后还需要加入两个镜像地址，由于在国内访问Flutter可能会受到限制，谷歌官方为中国开发者搭建的临时镜像（临时镜像不保证一直可以使用）</p>
+<pre><code class="language-shell">export PUB_HOSTED_URL=https://pub.flutter-io.cn
+export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
+</code></pre>
+<p>保存退出然后运行</p>
+<pre><code class="language-shell">source ~/.bash_profile 
+</code></pre>
+<p>这样环境变量就弄好了，如果重启失效可以参考 <a href="https://hashdog.cn/post/macos-pei-zhi-adb/%22macOS%E9%85%8D%E7%BD%AEadb%22">macOS配置adb</a> 最后特别提醒</p>
+<p>终端运行flutter doctor检查flutter环境安装情况</p>
+<pre><code class="language-shell">flutter doctor
+</code></pre>
+<p><img src="https://hashdog.cn/post-images/1599445960135.png" alt="" loading="lazy"><br>
+运行后如图有flutter版本号就是安装成功了，下方有列举了一些开发工具安装情况，打x的表示没有安装，打勾表示安装好了的，例如我这里Android Studio已经打勾了就安装好flutter插件了。</p>
+<h3 id="开发工具安装flutter插件">开发工具安装flutter插件</h3>
+<blockquote>
+<p>我这里举例Android Studio插件安装</p>
+</blockquote>
+<p>我们需要两个插件</p>
+<ol>
+<li>flutter插件：提供程序的运行、调试和热重载等功能</li>
+<li>Dart：提供Dart语言的支持</li>
+</ol>
+<p>首先打开Android Studio，找到preferences --&gt; plugins --&gt; 搜索flutter，如图<br>
+<img src="https://hashdog.cn/post-images/1599445971716.png" alt="" loading="lazy"><br>
+我这里已经安装好了，没有安装的直接点击install即可，一会会弹出同时安装Dart，点击yes就可以了</p>
+<h3 id="开发工具界面展示">开发工具界面展示</h3>
+<blockquote>
+<p>这里同样使用Android Studio</p>
+</blockquote>
+<p><img src="https://hashdog.cn/post-images/1599445983847.png" alt="" loading="lazy"><br>
+这里我们可以看到即可以使用Android手机或者模拟器也可以使用iOS的手机或者模拟器，也就是说我们可以在两大移动平台可以预览我们的代码。</p>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#%E5%AE%89%E8%A3%85flutter-sdk">安装flutter sdk</a></li>
+<li><a href="#%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E5%AE%89%E8%A3%85flutter%E6%8F%92%E4%BB%B6">开发工具安装flutter插件</a></li>
+<li><a href="#%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7%E7%95%8C%E9%9D%A2%E5%B1%95%E7%A4%BA">开发工具界面展示</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://hashdog.cn/post/googleplay-shang-jia-ying-yong-de-facebook-keyhash-huo-qu-fang-fa/">
+              <h3 class="post-title">
+                GooglePlay上架应用的Facebook keyhash获取方法
+              </h3>
+            </a>
+          </div>
+        
+
+        
+
+        <div class="site-footer">
+  <p>©<script>document.write(new Date().getFullYear());</script> <a href="#">HashDog</a><a class="rss" href="https://beian.miit.gov.cn/" target="_blank">粤ICP备2022007514号-1</a></p>
+  <a class="rss" href="https://hashdog.cn/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>
